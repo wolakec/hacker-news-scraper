@@ -73,5 +73,5 @@ Here is a sample of the output:
 
 * [Minimist](https://github.com/substack/minimist) - This package helps out with parsing command line arguments
 * [Axios](https://github.com/axios/axios) - HTTP client for making requests
-* [Cheerio](https://github.com/cheeriojs/cheerio) - Allows us to parse HTML with it's jQuery - like API
+* [Cheerio](https://github.com/cheeriojs/cheerio) - Allows us to parse HTML with a jQuery like API
 * [Valid-Url](https://github.com/ogt/valid-url) - This allows us to check if URL's are valid
