@@ -1,0 +1,21 @@
+{
+  "name": "hacker-news-json",
+  "version": "1.0.0",
+  "description": "A helpful package to scrape Hacker News and output it as JSON",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "hackernews": "./index.js"
+  },
+  "author": "Wol Akec",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "cheerio": "^1.0.0-rc.2",
+    "minimist": "^1.2.0",
+    "valid-url": "^1.0.9"
+  },
+  "main": "index.js",
+  "devDependencies": {}
+}
