@@ -9,6 +9,7 @@ Here are all the instructions you need to get up and running.
 ### Prerequisites
 This project depends upon the following:
   - Node.js (https://nodejs.org) - Version 8 and above
+  - Docker (https://www.docker.com/get-started) - Optional, only required to run using docker
 
 ### Installation
 1. Clone the repository to your local machine
@@ -20,28 +21,29 @@ Run the command:
 npm install
 ```
 
-If this had been pushed up as an npm package, you could simply install it by running "npm install package-name", however 
+If this had been pushed up as an npm package, you could simply install it by running "npm install package-name", however
 since it is not on npm, you can simulate this behaviour by running:
 
 ```
 npm link
-``` 
+```
 
 You will now be able to run the hackernews command from anywhere on your machine. When you are done playing around
 you can unlink by running:
 
 ```
 npm unlink
-``` 
+```
 
 ### Running the script
 
-To run the script execute the following command, providing the number of posts (positive integer between 1 and 100) 
+To run the script execute the following command, providing the number of posts (positive integer between 1 and 100)
 you would like to fetch:
 
 ```
 hackernews --posts 100
 ```
+
 ### Output Format
 
 The output format is JSON, which will be outputted to STDOUT.
@@ -67,6 +69,17 @@ Here is a sample of the output:
     "rank": 2
   }
 ]
+```
+
+### Running using docker
+Run the following command in the root directory:
+```
+docker build -t hackernews .
+```
+
+After the image has been built, run the following command, providing an argument for number of posts:
+```
+docker run hackernews --posts 100
 ```
 
 ## Dependencies
